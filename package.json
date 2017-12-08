@@ -1,0 +1,11 @@
+{
+  "name": "dereplication-tool",
+  "version": "1.0.0",
+  "description": "A tool of json data dereplication.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Xavier Tung",
+  "license": "ISC"
+}
