@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const dereplication = require('./src/dereplication');
 
-const rootDir = path.resolve(__dirname, "datasource");
+const rootDir = path.resolve(__dirname, "dataSource");
 const targetDir = path.resolve(__dirname, "target");
 
 const dataSources = fs.readdirSync(rootDir);
