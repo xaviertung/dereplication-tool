@@ -10,7 +10,7 @@ module.exports = function(input, output) {
 	for(let i=1; i<rows.length-1; i++) {
 		const row = rows[i];
 		
-		const rowKey1 = row.match(/[\s]*[\"]*(.)*[\"]*[\s]*[:][\s]*[\"]/)[0];
+		const rowKey1 = row.match(/[\s]*[\"]*(.)*[\"]*[\s]*[:][\s]*[\"](?![,])/)[0];
 		let rowKey2 = rowKey1.substring(0, rowKey1.length-1).replace(/(^\s*)|(\s*$)/g, "");
 		rowKey2 = rowKey2.replace(/(^\"*)|([\"]*[\s]*[:][\s]*[\"]*$)/g, "");
 		let rowValue2 = row.substring(rowKey1.length);
