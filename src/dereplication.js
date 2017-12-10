@@ -18,9 +18,9 @@ module.exports = function(input, output) {
 		let rowValue2 = row.substring(rowKey1.length);
 		rowValue2 = rowValue2.replace(/(^\s*)|(\s*$)/g, "");
 		if(i != rows.length-2) {
-			rowValue2 = rowValue2.substring(0, rowValue2.length-1).replace(/(["]$)/g, "");
+			rowValue2 = rowValue2.substring(0, rowValue2.length-1).replace(/(["]$)/, "");
 		} else {
-			rowValue2 = rowValue2.substring(0, rowValue2.length).replace(/(["]$)/g, "");
+			rowValue2 = rowValue2.substring(0, rowValue2.length).replace(/(["]$)/, "");
 		}
 
 		if(rowValue2!=""){
